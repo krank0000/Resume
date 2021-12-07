@@ -411,6 +411,12 @@ div.work{
     top: -16px; left: -65px;
     animation: rotate_re 5s alternate infinite,flashing 0.5s linear infinite alternate;
 }
+#w_t2{
+    width: 50%;
+    position: absolute;
+    top: -16px; left: -65px;
+    animation: rotate 5s alternate infinite,flashing 0.5s linear infinite alternate;
+}
 .W_three p{
     font-size: 30px;
     letter-spacing: 8px;
