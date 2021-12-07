@@ -1,0 +1,491 @@
+*{
+    color: white;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    max-width:2000px;
+}
+body{
+    background-color: rgb(8, 8, 18);
+    background-image: url('img/背景2.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-attachment: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+/*個人介紹*/
+.Top{
+    position:relative;
+    top: 120px;
+    left: 75px;
+    height: 500px;
+    width: 1300px;
+    float: left;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center; 
+}
+#ImgP{
+    position: relative;
+    top: 10px;left: 100px;
+    opacity: 1.0;
+}
+#ImgP:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+}
+div.Top-text{
+    position: absolute;
+    top: 50px;
+    left: 650px;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+#name{
+    font-size: 35px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    text-shadow: 
+        0 0 10px #ffdb0e,
+        0 0 20px #ffdb0e,
+        0 0 50px #ffdb0e,
+        0 0 100px #ffdb0e,
+        0 0 200px #ffdb0e;
+    animation: flashing 3s linear infinite alternate;
+}
+
+#introduce1{
+    line-height: 45px;
+    /*打字動畫*/
+    animation: typing1 3s steps(14, end), blink-caret .85s step-end infinite;
+    overflow: hidden;
+    font-family: monospace;
+    width: 14em;
+    white-space: nowrap;
+}
+#introduce2{
+    line-height: 45px;
+    /*打字動畫*/
+    animation: typing2 3s steps(20, end), blink-caret .85s step-end infinite;
+    overflow: hidden;
+    font-family: monospace;
+    width: 20em;
+    white-space: nowrap;
+}
+#introduce3{
+    line-height: 45px;
+    /*打字動畫*/
+    animation: typing3 3s steps(16, end), blink-caret .85s step-end infinite;
+    overflow: hidden;
+    font-family: monospace;
+    width: 16em;
+    white-space: nowrap;
+}
+/*打字動畫*/
+@keyframes typing1 {
+    from { width: 0; }
+    to { width: 14em; }
+  }
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 23em; }
+  }
+@keyframes typing3 {
+    from { width: 0; }
+    to { width: 16em; }
+  }
+@keyframes typing4 {
+    from { width: 0; }
+    to { width: 16em; }
+  }
+@keyframes blink-caret {
+    from, to { box-shadow: 1px 0 0 0 transparent; }
+    50% { box-shadow: 1px 0 0 0; }
+  }
+#sentence{
+    position: relative;
+    top: 20px;
+    line-height: 45px;
+    /*打字動畫*/
+    animation: typing4 3s steps(16, end), blink-caret .85s step-end infinite;
+    overflow: hidden;
+    font-family: monospace;
+    width: 16em;
+    white-space: nowrap;
+}
+/*聯絡*/
+div.msg{
+    position: absolute;
+    top: 100px;
+    left: 1100px;
+    width: 50px;
+    text-align: left;
+    line-height: 100px;
+}
+.fb:hover{
+    filter: blur(5px);
+    filter: brightness(0.5);
+}
+.ig:hover{
+    filter: blur(5px);
+    filter: brightness(0.5);
+}
+.mail:hover{
+    filter: blur(5px);
+    filter: brightness(0.5);
+}
+/*區塊2*/
+div.Skill{
+    /*底框*/
+    position:relative;
+    top: 180px;
+    left: 75px;
+    height: 1200px;
+    width: 1300px;
+    float: left;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*內容*/
+    font-size: 30px;
+    letter-spacing: 1px;
+    
+}
+header{
+    font-size: 50px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;left: 300px;
+    text-shadow: 
+    0 0 10px #ffdb0e,
+    0 0 20px #ffdb0e,
+    0 0 50px #ffdb0e,
+    0 0 100px #ffdb0e,
+    0 0 200px #ffdb0e;
+    animation: flashing 2s linear infinite alternate;
+}
+
+.skillbox{
+    position: relative;
+    top: 150px; left: 150px;
+    box-sizing: border-box;
+    width: 70%; margin: 20px 20px 20px 20px;
+    
+}
+.skillbox p{
+    padding: 0px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.skillbox :nth-child(2){
+    float: right;
+    position: relative;
+    top: -105px;
+}
+.bar{
+    background: rgba(66, 66, 64,0.7);
+    padding: 2px;
+    box-sizing: border-box;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+div[class^=bar_]{
+    text-align: center;
+    border-bottom: 20px solid #ffea75;
+    opacity: 0.95;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: -5px;left: 5px;
+}
+
+@keyframes bar1{
+    from{width: 0%;}
+    to{width: 65%;}
+}
+.bar_1{
+    animation: bar1 3s infinite;
+}
+@keyframes bar2{
+    from{width: 0%;}
+    to{width: 70%;}
+}
+.bar_2{
+    animation: bar2 3s infinite;
+}
+@keyframes bar3{
+    from{width: 0%;}
+    to{width: 80%;}
+}
+.bar_3{
+    animation: bar3 3s infinite;
+}
+@keyframes bar4{
+    from{width: 0%;}
+    to{width: 75%;}
+}
+.bar_4{
+    animation: bar4 3s infinite;
+}
+@keyframes bar5{
+    from{width: 0%;}
+    to{width: 93%;}
+}
+.bar_5{
+    animation: bar5 3s infinite;
+}
+@keyframes bar6{
+    from{width: 0%;}
+    to{width: 90%;}
+}
+.bar_6{
+    animation: bar6 3s infinite ;
+}
+
+div.Education{
+    max-width:2000px;
+    /*底框*/
+    position:relative;
+    top: 240px;
+    left: 75px;
+    height: 820px;
+    width: 1300px;
+    float: left;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*內容*/
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.time p{
+    max-width:2000px;
+    position: relative;
+    top: 200px; left: 150px;
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 5px;
+    line-height: 60px;
+}
+
+
+.school h1{
+    max-width:2000px;
+    position: relative;
+    top: -140px; left: 630px;
+    font-size: 40px;
+    padding: 20px 0px 20px 20px;
+    letter-spacing: 8px;
+    font-family: "cwTeXFangSong";
+    line-height: 50px;
+    width: 600px;
+    
+}
+
+div.project{
+    /*底框*/
+    position:relative;
+    top: 300px;
+    left: 75px;
+    height: 1740px;
+    width: 1300px;
+    float: left;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*內容*/
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.benben{
+    position: relative;
+    top: 200px; left: 200px;   
+}
+#ben1{
+    position: absolute;
+    top: 10px; left: 290px;   
+}
+#ben2{
+    position: absolute;
+    top: 150px; left: 290px;   
+}
+#ben3{
+    position: absolute;
+    top: 275px; left: 290px;   
+}
+[class^=P_text] {
+    position: relative;
+    top: -400px; left: 460px;
+    text-align: center;
+    width: 500px; height: 200px;
+    line-height: 40px;
+}
+.P_T_line{
+    border-bottom: 3px solid white;
+    padding: 10px;
+}
+
+.Project_2{
+    position: relative;
+    top: 120px; left: 170px;
+}
+#P2img1{
+    position: absolute;
+    top: 330px; left: 10px; 
+}
+#P2img2{
+    position: absolute;
+    top: 330px; left: 146px; 
+}
+#P2img3{
+    position: absolute;
+    top: 330px; left: 280px; 
+}
+.P_text_2{
+    position: relative;
+    top: -320px; left: 500px;
+}
+
+.Project_3{
+    position: relative;
+    top: 130px; left: 170px;
+}
+#P3img1{
+    position: absolute;
+    top: 250px; left: 10px; 
+}
+#P3img2{
+    position: absolute;
+    top: 250px; left: 146px; 
+}
+#P3img3{
+    position: absolute;
+    top: 250px; left: 280px; 
+}
+.P_text_3{
+    position: relative;
+    top: -280px; left: 500px;
+}
+
+div.work{
+    /*底框*/
+    position:relative;
+    top: 360px;
+    left: 75px;
+    height: 900px;
+    width: 1300px;
+    float: left;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*內容*/
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.title{
+    position: relative;
+    top: 180px; left: 200px;
+}
+@keyframes typing_w {
+    from { width: 0; }
+    to { width: 6em; }
+  }
+.W_t_h1{
+    font-size: 40px;
+    position: relative;
+    top: 200px; left: 150px;
+    letter-spacing: 10px;
+    /*打字機特效*/
+    animation: typing_w 3s steps(6, end) infinite, blink-caret .85s step-end infinite;
+    overflow: hidden;
+    font-family: monospace;
+    width: 6em;
+    white-space: nowrap;
+}
+#w_t{
+    width: 50%;
+    position: absolute;
+    top: -16px; left: -65px;
+    animation: rotate_re 5s alternate infinite,flashing 0.5s linear infinite alternate;
+}
+.W_three p{
+    font-size: 30px;
+    letter-spacing: 8px;
+    position: relative;
+    top: 180px; left: 750px;
+    animation: flashing 1s linear infinite alternate;
+}
+.two p{
+    position: relative;
+    top: 200px;left: 850px;
+}
+.three p{
+    position: relative;
+    top: 220px; 
+}
+.one_p img{
+    position: absolute;
+    top: 200px; left: 1000px;
+    transition: 0.2s;
+    z-index: 99;
+    visibility:hidden;
+}
+.one:hover  .one_p img{
+    visibility: visible !important;;  
+    z-index: 99;
+}
+.two_p img{
+    position: absolute;
+    top: 420px; left: 1080px;
+    transition: 0.2s;
+    z-index: 99;
+    visibility:hidden;
+}
+.two:hover  .two_p img{
+    visibility: visible !important;;  
+    z-index: 99;
+}
+.three_p img{
+    position: absolute;
+    top: 520px; left: 1080px;
+    transition: 0.2s;
+    z-index: 99;
+    visibility:hidden;
+}
+.three:hover  .three_p img{
+    visibility: visible !important;;  
+    z-index: 99;
+}
+.W_three p{
+    width: 300px; height: 50px;
+}
+
+.mail_2:hover{
+    filter: blur(5px);
+    filter: brightness(0.5);
+}
+.mail_2 img{
+    position: absolute;
+    top: 780px; left: 60px;
+}
+.W_msg p{
+    position: relative;
+    top: 380px; left: 190px;
+    font-size: 30px;
+    width: 600px;
+    animation: move 2s alternate infinite,flashing 0.5s linear infinite alternate;
+}
+
+@keyframes move{
+    0%{left: 190px;}
+    100%{left: 350px;}
+}
+
+.end{
+    position: relative;
+    top: 5500px; left: 0;
+    height: 100px;
+}

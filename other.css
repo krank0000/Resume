@@ -1,0 +1,129 @@
+@keyframes rotate{
+    form{ transform: rotate(0deg);}
+    to {transform: rotate(360deg); }
+}
+@keyframes rotate_re{
+    form{ transform: rotate(-0deg);}
+    to {transform: rotate(-360deg); }
+}
+
+.gear1{
+    position: fixed;
+    position: absolute;
+    top:450px;
+    left: 1200px;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0.9;
+    animation: rotate 3.5s linear infinite ;
+}
+.gear2{
+    position: fixed;
+    position: absolute;
+    top:350px;
+    left: 1350px;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0.9;
+    animation: rotate_re 2s linear infinite ;
+}
+
+.gear3{
+    position: fixed;
+    position: absolute;
+    top:50px;
+    left: 45px;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0.8;
+    animation: rotate 10s linear infinite ;
+}
+.gear4{
+    position: fixed;
+    position: absolute;
+    top:20px;
+    left: 245px;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0.7;
+    animation: rotate_re 3s linear infinite ;
+}
+@keyframes flashing{
+    from{filter: brightness(0.7);}
+    to{filter: brightness(1.2);}
+}
+
+.gear5{
+    position: fixed;
+    position: absolute;
+    top:50px;
+    left: 50px;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0.9;
+    animation: rotate 7s linear infinite ;
+}
+
+.d1{
+    position: absolute;
+    top: 520px; left: 600px;
+    width: 50%; 
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.sq{
+    position: absolute;
+    top: 200px; left: 420px;
+    width: 200px;height: 500px;
+    align-items: center;
+}
+
+.square1{
+    position: absolute;
+    top: 85px; left: 60px;
+    width: 200px; height: 100px;
+}
+.square2{
+    position: absolute;
+    top: 200px; left: 60px;
+    width: 200px; height: 100px;
+}
+.square3{
+    position: absolute;
+    top: 315px; left: 60px;
+    width: 200px; height: 100px;
+}
+
+.sq1{
+    z-index: 99;
+    animation: rotate 2s linear infinite ;
+}
+
+.sq0{
+    position: absolute;
+    left: 0px;
+    animation: rotate_re 4s linear infinite ;
+}
+
+.gear6{
+    position: fixed;
+    position: absolute;
+    top:2600px;
+    left: 1100px;
+    overflow: hidden;
+    z-index: 98;
+    opacity: 0.5;
+    animation: rotate_re 3s linear infinite ;
+}
+.gear7{
+    position: fixed;
+    position: absolute;
+    top:2750px;
+    left: 930px;
+    overflow: hidden;
+    z-index: 98;
+    opacity: 0.5;
+    animation: rotate 3s linear infinite ;
+}
+
