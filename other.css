@@ -132,6 +132,7 @@
     top: 630px; left: 1350px;
     z-index: 99;
     opacity: 0.5;
+    animation: rotate_re 1.5s linear infinite ;
 }
 
 .gear_Top:hover{
