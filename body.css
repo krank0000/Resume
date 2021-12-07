@@ -485,7 +485,11 @@ div.work{
 }
 
 .end{
+    /*background-color: black;*/
     position: relative;
-    top: 5500px; left: 0;
-    height: 100px;
+    top: 5550px; left: 0;
+    height: 130px;
+    opacity: 0.95;
 }
+
+

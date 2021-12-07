@@ -127,3 +127,55 @@
     animation: rotate 3s linear infinite ;
 }
 
+.gear_Top{
+    position: fixed;
+    top: 630px; left: 1350px;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+.gear_Top:hover{
+    animation: rotate 1s linear infinite ;
+    transform: 0.2s;
+    opacity: 1;
+}
+
+.mark{
+    position: absolute;
+    left: 950px;
+    height: 100px;width: 450px;
+}
+@keyframes mark{
+    0%{top: 0px;}
+    50%{top: 200px;}
+}
+
+#mark1 img{
+    position: absolute;
+    top: 0;
+}
+#mark1 img:hover{
+    animation: mark 1.5s linear infinite;
+}
+#mark2 img{
+    position: absolute;
+    top: 0; left: 120px;
+}
+#mark2 img:hover{
+    animation: mark 1.5s linear infinite;
+}
+#mark3 img{
+    position: absolute;
+    top: 0; left: 240px;
+}
+#mark3 img:hover{
+    animation: mark 1.5s linear infinite;
+}
+#mark4 img{
+    position: absolute;
+    top: 0; left: 360px;
+}
+#mark4 img:hover{
+    animation: mark 1.5s linear infinite;
+}
+
