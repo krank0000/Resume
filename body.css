@@ -310,6 +310,16 @@ div.project{
     transition: all 0.5s ease 0s;
     z-index: 99;
 }
+.project h1:hover{
+    text-shadow: 
+        0 0 10px #ffdb0e,
+        0 0 20px #ffdb0e,
+        0 0 50px #ffdb0e,
+        0 0 100px #ffdb0e,
+        0 0 200px #ffdb0e;
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+}
 .benben{
     position: relative;
     top: 200px; left: 200px;   
