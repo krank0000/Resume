@@ -13,6 +13,10 @@ body{
     padding: 0;
     margin: 0;
 }
+/*頁面滑動*/
+html{
+    scroll-behavior: smooth;
+}
 
 /*個人介紹*/
 .Top{

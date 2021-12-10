@@ -148,7 +148,7 @@
 }
 @keyframes mark{
     0%{top: 0px;}
-    50%{top: 200px;}
+    50%{top: 100px;}
 }
 
 #mark1 img{
@@ -157,6 +157,7 @@
 }
 #mark1 img:hover{
     animation: mark 1.5s linear infinite;
+    z-index: 99;
 }
 #mark2 img{
     position: absolute;
@@ -164,6 +165,7 @@
 }
 #mark2 img:hover{
     animation: mark 1.5s linear infinite;
+    z-index: 99;
 }
 #mark3 img{
     position: absolute;
@@ -171,6 +173,7 @@
 }
 #mark3 img:hover{
     animation: mark 1.5s linear infinite;
+    z-index: 99;
 }
 #mark4 img{
     position: absolute;
@@ -178,5 +181,6 @@
 }
 #mark4 img:hover{
     animation: mark 1.5s linear infinite;
+    z-index: 99;
 }
 
